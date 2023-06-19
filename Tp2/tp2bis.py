@@ -41,7 +41,8 @@ def saveAllData():
     with open("save.json", "w") as outfile:
         outfile.write(jsonObject)
 
-def loadAllData(studentData):
+def loadAllData():
+    global studentData
     if os.path.exists("save.json"):
         with open("save.json", "r") as f:
             studentData = json.load(f)
@@ -50,7 +51,7 @@ def loadAllData(studentData):
 
 running = True
 studentData = {}
-loadAllData(studentData)
+loadAllData()
 
 # ----------------------------------------------
 
