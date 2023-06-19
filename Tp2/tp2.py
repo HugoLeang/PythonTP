@@ -23,7 +23,7 @@ print(parentFolder)
 studentsDir = os.path.join(parentFolder, "students")
 if not os.path.exists(studentsDir):
     os.mkdir(studentsDir)
-    
+
 os.chdir(studentsDir)
 
 for data in studentDatas:
