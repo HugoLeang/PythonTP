@@ -1,3 +1,5 @@
+import time
+import pandas as pd
 import numpy as np
 marks = {"StudentA": {"marks": {"tp1": 15.3, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }},
          "StudentB": {"marks": {"tp1": 15.3, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }},
@@ -10,6 +12,7 @@ marks = {"StudentA": {"marks": {"tp1": 15.3, "tp2": 12, "tp3": 16, "tp4": 9, "tp
          "StudentJ": {"marks": {"tp1": 15.3, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }},
          "StudentK": {"marks": {"tp1": 15.3, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }}}
 
+
 studentData =[]
 for student in marks:
     data = []
@@ -18,10 +21,14 @@ for student in marks:
     for value in markValues:
         data.append(float(value))
     studentData.append(data)
-
-
 npArray = np.array(studentData)
+df = pd.DataFrame(npArray,columns=["Student Name", "TP1", "TP2", "TP3", "TP4", "TP5"])
+
+df.convert_dtypes()
+print(df.info())
+print(df)
+print(df.iloc[: ,1:6])
+print(df.iloc[::2])
+print(df > 13)
 
 
-print(npArray)
-print(npArray[:, 1:5])
