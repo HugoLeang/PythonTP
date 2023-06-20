@@ -1,16 +1,16 @@
 import time
 import pandas as pd
 import numpy as np
-marks = {"StudentA": {"marks": {"tp1": 15.3, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }},
-         "StudentB": {"marks": {"tp1": 15.3, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }},
-         "StudentC": {"marks": {"tp1": 15.3, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }},
-         "StudentD": {"marks": {"tp1": 15.3, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }},
-         "StudentE": {"marks": {"tp1": 15.3, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }},
-         "StudentF": {"marks": {"tp1": 15.3, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }},
-         "StudentH": {"marks": {"tp1": 15.3, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }},
-         "StudentI": {"marks": {"tp1": 15.3, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }},
-         "StudentJ": {"marks": {"tp1": 15.3, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }},
-         "StudentK": {"marks": {"tp1": 15.3, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }}}
+marks = {"StudentA": {"marks": {"tp1": 11.3, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }},
+         "StudentB": {"marks": {"tp1": 12, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }},
+         "StudentC": {"marks": {"tp1": 2, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }},
+         "StudentD": {"marks": {"tp1": 5, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }},
+         "StudentE": {"marks": {"tp1": 13, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }},
+         "StudentF": {"marks": {"tp1": 14, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }},
+         "StudentH": {"marks": {"tp1": 10, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }},
+         "StudentI": {"marks": {"tp1": 17, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }},
+         "StudentJ": {"marks": {"tp1": 13, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }},
+         "StudentK": {"marks": {"tp1": 13, "tp2": 12, "tp3": 16, "tp4": 9, "tp5": 10 }}}
 
 
 studentData =[]
